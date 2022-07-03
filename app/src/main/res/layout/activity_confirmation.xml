@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo2"
+    tools:context=".Confirmation">
+
+    <ImageView
+        android:id="@+id/productPic"
+        android:layout_width="338dp"
+        android:layout_height="316dp"
+        android:background="#D82B2929"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/lblViewProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product:"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        android:text="Price:"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/txtViewPrice"
+        android:layout_width="113dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#D82B2929"
+        android:textColor="#EFECEC"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/lblPrice"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <EditText
+        android:id="@+id/txtQty"
+        android:layout_width="113dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#D82B2929"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#EFECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/lblQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPrice" />
+
+    <EditText
+        android:id="@+id/txtTotal"
+        android:layout_width="113dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#D82B2929"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        android:textColor="#EFECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/lblTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty" />
+
+    <TextView
+        android:id="@+id/lblTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        android:text="Total:"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/productPic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblQuantity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:text="Quantity:"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrice" />
+
+    <TextView
+        android:id="@+id/txtViewProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#D82B2929"
+        android:textColor="#EFECEC"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="412dp"
+        android:layout_height="68dp"
+        android:background="#D82B2929"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#EDE9E9"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/btnConfirmationBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/btnAddOrder"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Add Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productPic" />
+
+    <ImageButton
+        android:id="@+id/btnConfirmationBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#59BBB8BC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

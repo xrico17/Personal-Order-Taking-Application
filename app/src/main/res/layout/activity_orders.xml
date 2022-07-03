@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo2"
+    tools:context=".Orders">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:background="#D82B2929"
+        android:clickable="false"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/logo1" />
+
+    <Button
+        android:id="@+id/btnConfirmOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Orders"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilkTea6" />
+
+    <ImageButton
+        android:id="@+id/imgMilktea6"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        android:background="#D82B2929"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgMilktea5"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilkTea4"
+        app:srcCompat="@drawable/milktea6" />
+
+    <ImageButton
+        android:id="@+id/imgMilktea2"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:background="#D82B2929"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgMilktea1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        app:srcCompat="@drawable/milktea2" />
+
+    <ImageButton
+        android:id="@+id/imgMilktea4"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:background="#D82B2929"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgMilktea3"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilkTea2"
+        app:srcCompat="@drawable/milktea4" />
+
+    <ImageButton
+        android:id="@+id/imgMilktea1"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#D82B2929"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        app:srcCompat="@drawable/milktea1" />
+
+    <ImageButton
+        android:id="@+id/imgMilktea3"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#D82B2929"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilkTea1"
+        app:srcCompat="@drawable/milktea3" />
+
+    <ImageButton
+        android:id="@+id/imgMilktea5"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#D82B2929"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilkTea3"
+        app:srcCompat="@drawable/milktea5" />
+
+    <ImageButton
+        android:id="@+id/btnOrdersBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#59BBB8BC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/lblMilkTea4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:background="#95F106ED"
+        android:fontFamily="cursive"
+        android:text="Matcha"
+        android:textColor="#18191C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lblMilkTea3"
+        app:layout_constraintTop_toBottomOf="@+id/imgMilktea4" />
+
+    <TextView
+        android:id="@+id/lblMilkTea5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#95F106ED"
+        android:fontFamily="cursive"
+        android:text="Cookies and Cream Cheese"
+        android:textColor="#18191C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMilktea5" />
+
+    <TextView
+        android:id="@+id/lblMilkTea6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:background="#95F106ED"
+        android:fontFamily="cursive"
+        android:text="Chocolate Cream Cheese"
+        android:textColor="#18191C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/lblMilkTea5"
+        app:layout_constraintTop_toBottomOf="@+id/imgMilktea6" />
+
+    <TextView
+        android:id="@+id/lblMilkTea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#95F106ED"
+        android:fontFamily="cursive"
+        android:text="Dark Chocolate"
+        android:textColor="#18191C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMilktea1" />
+
+    <TextView
+        android:id="@+id/lblMilkTea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="178dp"
+        android:background="#95F106ED"
+        android:fontFamily="cursive"
+        android:text="Okinawa"
+        android:textColor="#18191C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMilktea1" />
+
+    <TextView
+        android:id="@+id/lblMilkTea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:background="#95F106ED"
+        android:fontFamily="cursive"
+        android:text="Taro Cream Cheese"
+        android:textColor="#18191C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/lblMilkTea1"
+        app:layout_constraintTop_toBottomOf="@+id/imgMilktea2" />
+
+    <Button
+        android:id="@+id/btnDeleteOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Delete Last Order"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirmOrders"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilkTea5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
